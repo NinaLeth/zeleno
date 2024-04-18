@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57.12 50.64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff5c00;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: #52e17a;
+      }
+
+      .cls-3 {
+        fill: #000;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <mask id="mask" x="-.88" y="-.73" width="40" height="50" maskUnits="userSpaceOnUse">
+      <g id="path-1-outside-1_380_6" data-name="path-1-outside-1 380 6">
+        <rect class="cls-4" x="-.88" y="-.73" width="40" height="50"/>
+        <path class="cls-3" d="M1.05,48.27v-5.93L24.64,9.24H1V1h36.19v5.93L13.58,40.03h23.66v8.24H1.05Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="cls-5">
+    <path class="cls-2" d="M1.05,48.27H.05v1h1v-1ZM1.05,42.34l-.81-.58-.19.26v.32h1ZM24.64,9.24l.81.58,1.13-1.58h-1.94v1ZM1,9.24h-1v1h1v-1ZM1,1V0h-1v1h1ZM37.19,1h1V0h-1v1ZM37.19,6.93l.81.58.19-.26v-.32h-1ZM13.58,40.03l-.81-.58-1.13,1.58h1.94v-1ZM37.24,40.03h1v-1h-1v1ZM37.24,48.27v1h1v-1h-1ZM2.05,48.27v-5.93H.05v5.93h2ZM1.86,42.92L25.45,9.82l-1.63-1.16L.23,41.76l1.63,1.16ZM24.64,8.24H1v2h23.64v-2ZM2,9.24V1H0v8.24h2ZM1,2h36.19V0H1v2ZM36.19,1v5.93h2V1h-2ZM36.38,6.35L12.77,39.45l1.63,1.16L38.01,7.51l-1.63-1.16ZM13.58,41.03h23.66v-2H13.58v2ZM36.24,40.03v8.24h2v-8.24h-2ZM37.24,47.27H1.05v2h36.19v-2Z"/>
+  </g>
+  <circle class="cls-1" cx="50.12" cy="43.64" r="7"/>
+</svg>
