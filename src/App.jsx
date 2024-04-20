@@ -8,6 +8,7 @@ import HomePage from './sider/HomePage'
 import OmosPage from './sider/OmosPage'
 import WebinarPage from './sider/WebinarPage'
 import ErrorPage from './sider/ErrorPage'
+import LoginPage from './sider/LoginPage'
 import MedarbejderPage from './sider/MedarbejderPage'
 
 
@@ -22,7 +23,8 @@ function App() {
         <Route path="/omos" element={<OmosPage />} />
         <Route path="/webinar" element={<WebinarPage />} />
         <Route path="*" element={<ErrorPage />} /> 
-        <Route path="/admin" element={<MedarbejderPage />} />
+        <Route path="/admin" element={<LoginPage />} />
+        <Route path="/medarbejder" element={<MedarbejderPage />} />
       </Routes>
       <Footer />
     </>

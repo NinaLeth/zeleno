@@ -1,27 +1,43 @@
-import { NavLink } from "react-router-dom"
-import logo from "../assets/lille_logo.svg"
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from "../assets/lille_logo.svg";
 
+function BurgerMenu() {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default function Header() {
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    /*Javascript skal stå her*/
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
-    return (
-    <>
+  return (
     <div className="header">
-    <NavLink to="/"> <img id="logo" src={logo} alt="logo" /></NavLink>
-        <nav>
-            <NavLink to="/error">Cases</NavLink>
-            <NavLink to="/kontakt">Kontakt</NavLink>
-            <NavLink to="/omos">Om os</NavLink>
-            <NavLink to="/webinar">Book Webinar</NavLink>
-        </nav>
-
-       
+      <NavLink to="/"> <img id="logo" src={logo} alt="logo" /></NavLink>
+      
+          <div className={`burger-menu ${isOpen ? 'active' : ''}`}>
+              <div id="burgermenu_knap" onClick={toggleMenu}>
+                MENU
+              </div>
+              
+              <nav className={`burger-menu-nav ${isOpen ? 'active' : ''}`}>
+                <div className="kryds" onClick={toggleMenu}>
+                  LUK MENU
+                </div>
+                <br />
+                <NavLink to="/error" onClick={closeMenu}>Cases</NavLink>
+                <br />
+                <NavLink to="/" onClick={closeMenu}>Kontakt</NavLink>
+                <br />
+                <NavLink to="/omos" onClick={closeMenu}>Om os</NavLink>
+                <br />
+                <NavLink to="/webinar" onClick={closeMenu}>Book Webinar</NavLink>
+              </nav>
+          </div>
     </div>
+  );
+}
 
-    
-    
-    </>
-    
-    ) }
+export default BurgerMenu;

@@ -6,12 +6,14 @@ export default function WebinarPage() {
 
 const [posts, setPosts] = useState([]);
 const [isPosts, setIsPosts] = useState(true);
+const [status, setStatus] = useState("");
 
 const [virksomhed, setVirksomhed] = useState("");
-const [navn, setNavn] = useState("")
-const [deltager, setDeltager] = useState("")
+const [navn, setNavn] = useState("");
+const [deltager, setDeltager] = useState("");
 const [email, setEmail] = useState("");
 const [mobilnummer, setMobilnummer] = useState("");
+const [webinar, setWebinar] = useState("");
 
     useEffect(() => {
         async function getPosts() {
@@ -37,11 +39,11 @@ const [mobilnummer, setMobilnummer] = useState("");
         const { value, checked } = event.target;
 
         if (checked) {
-            setDeltager([...deltager, value]);
+            setWebinar([...webinar, value]);
         } else {
-            const index = deltager.indexOf(value);
-            deltager.splice(index, 1);
-            setDeltager([...deltager]); 
+            const index = webinar.indexOf(value); 
+            webinar.splice(index, 1);
+            setWebinar([...webinar]); 
         }
     }
 
@@ -49,14 +51,15 @@ const [mobilnummer, setMobilnummer] = useState("");
         e.preventDefault();
 
         if (webinar.length > 0) {
-            const url = "https://zeleno-dc235-default-rtdb.europe-west1.firebasedatabase.app/webinar.json";
+            const url = "https://zeleno-dc235-default-rtdb.europe-west1.firebasedatabase.app/kunder.json";
 
             const formData = {
-                deltager: deltager,
+                webinar: webinar,
                 virksomhed: virksomhed,
+                navn: navn,
+                deltager: deltager,
                 email: email,
                 mobilnummer: mobilnummer,
-                detalger: deltalger,
             };
 
             fetch(url, {

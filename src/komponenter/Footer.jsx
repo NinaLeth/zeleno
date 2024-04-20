@@ -14,17 +14,14 @@ export default function Footer() {
             <br />
             <p>Skal vi hjælpe dig med at lave din hjemmeside ud fra et mere bæredygtigt perspektiv? <br />Så tøv ikke med at kontakte os! </p>
             <br /><br />
+            <div>
                 <div id="kontaktoplysninger">
-                    <div>
+                <div id="kontakt_os" >
                     <img id="mobil" src={mobilikon} alt="Mobilikon, ring til os her" />
-                    <p>+45 0000 0000</p>
-                    </div>
-                    
-                    <div>
-                    <br />
-                    <img src={mailikon} alt="Mailikon, skriv til os her" />
+                    <p>+45 9990 6660</p>
+                    <img id="mail"src={mailikon} alt="Mailikon, skriv til os her" />
                     <p>zeleno@mail.com</p>
-                    </div>
+                </div>
 
                 <div id="some">
                     <img src={instagram} alt="Instagramikon, følg os på instagram" />
@@ -32,7 +29,7 @@ export default function Footer() {
                     <img src={linkedin} alt="LinkedInikon, følg os på linkedIn" />
                 </div>
                 </div>
-
+                </div>
             </section> 
         </section>
 

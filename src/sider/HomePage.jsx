@@ -5,6 +5,7 @@ import mega from "../assets/megafon_ikon.svg"
 import scroller from "../assets/kvadrat_med_cirkel.svg"
 import animation from "../assets/fire_cirkler.json"
 import elanimation from "../assets/elpæregrafik 2.json"
+import storanimation from "../assets/mange_firkanter.json"
 import Lottie from "lottie-react"
 import { Link } from "react-router-dom"
 export default function HomePage() {
@@ -14,7 +15,7 @@ export default function HomePage() {
         <div className="dark">
             <div className="forside">
             <img id="stortlogo" src={stortlogo} alt="stortlogo" />   
-            <Lottie  id="elanimation" animationData={elanimation} loop={true} />
+            <Lottie  id="elanimation" animationData={elanimation} loop={false} />
             </div>
 
             <div className="fact">
@@ -23,8 +24,7 @@ export default function HomePage() {
                     <h1 className="prik">...</h1>
                 </div>
                 <div className="tekstbox">
-                    <p>Hvis internettet var et land ville det indtage 7. pladsen på listen over mest forurenende lande på verdensplan. <br /> Med xxxx ton CO2 udledt årligt forurener internettet x gange så meget som alt dansk industri til sammen...  Uden at ville tegne et for dystopisk billede af fremtiden er klimaets tilstand og vores rolle i det en kendsgerning vi bliver nødt til at forholde os til...
-                    <br /><br /> Hos Zeleno specialicerer vi os i, at finde nye og mere bæredygtige måder at designe hjemmesider - uden at gå på kompromis med funktionalitet og estitik! Selvom det er umuligt at gøre en hjemmeside klimavenligt, er der en masse man kan gøre for at gøre sit webdesign mere bæredygtigt... Nogle af disse teknikker har endda også andre fordele som forbedret SEO & page-load-time</p>
+                    <p>Internet brænder gennem cirka 3,7% af de globale kulstofemissioner, og den tendens vokser, da vores appetit for data fortsætter med at stige. Samtidig elsker vi webteknologien og hvordan den bruges til at skabe forbindelser, fremme kreativitet og styrke samfundet. <br /><br />Vi vil gerne hjælpe dig, med at tage et skridt i retning af at mindske vores digitale klimaaftryk og gøre vores online oplevelse mere bæredygtig. Måske kan vi endda vende det til vores fordel og finde måder at bruge teknologi til at bekæmpe klimaforandringerne.</p>
                 </div>
                 <div>
                     <div className="knap">
@@ -93,6 +93,8 @@ export default function HomePage() {
                         <Link to="/error">SE CASES</Link>
                     </div>
                     </div>
+
+                    <Lottie id="mangefirkanter" animationData={storanimation} loop={true} />
 
                 </section>
 
