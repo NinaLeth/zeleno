@@ -8,6 +8,7 @@ export default function ErrorPage() {
         <section className="dark">
             <div id="webinarside">
             <h1>DENNE SIDE HAR VI SPARET VÆK<span className="prik">.</span></h1>
+            <br />
             <Link to="/">TILBAGE TIL FORSIDEN</Link>
             <Lottie id="firenulfire" animationData={animation} loop={true} />
             </div>

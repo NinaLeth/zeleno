@@ -20,8 +20,8 @@ export default function OmosPage() {
                     <h1>VI HJÆLPER DIG<span className="prik"> ...</span></h1>
                     <div className="tekstbox">
                         <p>
-                             Sammen hjælper vi planeten. Multimediedesigneruddannelsen på Aarhus Erhvervsakademi førte os sammen. Efter at have kendt hinanden i knap to år blev vi i forået 2024 enige om, at slutte os til kampen for den grønne omstilling. Vi samlede os under navnet "Zeleno", der betyder grøn på mange forskellige sprog, og påbegyndte vores mission om at gøre internettet mere bæredygtigt.
-                            <br /><br /> At internettet overhovedet sviner er en kendsgerning, mange ikke er klare over. Derfor ser vi det i Zeleno som vores pligt at udbrede bæredygtigt webdesign som både videnskab og praksis i så høj grad vi kan. Til dagligt bruger vi vores energi på at bruge så lidt energi som overhovedet muligt - og hjælpe andre med at gøre det samme. 
+                             Med at hjælpe planeten.<br /><br /> I forået 2024 blev vi enige om, at slutte os til kampen for den grønne omstilling. Vi samlede os under navnet "Zeleno", der betyder grøn, og påbegyndte vores mission om at gøre internettet mere bæredygtigt.
+                            <br /><br /> At internettet overhovedet sviner er en kendsgerning, mange ikke er klare over. Derfor ser vi det i Zeleno som vores pligt at udbrede bæredygtigt webdesign som både videnskab og praksis i så høj grad vi kan.<br /> <br /> Vi bruger vores energi på at bruge så lidt energi som overhovedet muligt - og hjælpe andre med at gøre det samme. 
                         </p>
                     </div>
                 </section>
@@ -44,19 +44,19 @@ export default function OmosPage() {
                     <img className="titel" src={holdet} alt="Holdet" />
                     <section id="holdet">
                             <div className="employee">
-                                <img src={marie} alt="" />
+                                <img src={marie} alt="Marie" />
                                 <p>Marie Hammelsvang <br /> Grafisk designer & Animator</p>
                             </div>
                             <div className="employee">
-                                <img src={nina} alt="" />
+                                <img src={nina} alt="Nina" />
                                 <p>Nina Leth Møller <br />Webudvikler</p>
                             </div>
                             <div className="employee">
-                                <img src={kasper} alt="" />
+                                <img src={kasper} alt="Kasper" />
                                 <p>Kasper Grove Jakobsen<br />Creative Director</p> 
                             </div>
                             <div className="employee">
-                                <img src={amalie} alt="" />
+                                <img src={amalie} alt="Amalie" />
                                 <p>Amalie  Senniksen<br />SEO-specialist</p> 
                             </div>
                     </section>

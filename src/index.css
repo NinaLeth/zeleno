@@ -93,12 +93,11 @@ h3{
 .header{
   position: fixed;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 100vw;/*så den ikke går ud af skærmen*/
+  width: 100vw;
 
   z-index:5;
-  width: 100vw;
-  margin: 2%;
 }
 
 /*
@@ -437,7 +436,7 @@ margin-top:-80px;
   font-size: xxx-large;
   margin-bottom: 70px;
 }
-*/
+
 .omos .tekstbox{
   margin-top: 3%;
   width: 100%;
@@ -445,7 +444,7 @@ margin-top:-80px;
   border-color: #52E17A;
   border-style: solid;
   margin-bottom:25%;
-}
+}*/
 
 /*
 
@@ -560,7 +559,7 @@ font-size: 45pt;
   height: 8vh;
 }
 
-/*RESPONSIVT____________*/
+/*RESPONSIVT____________________________________________________________*/
 
 @media screen and (max-width: 1200px) {
 
@@ -608,6 +607,55 @@ font-size: 45pt;
     display: none;
   }
 
+  /*om os------*/
+  #omosstart{
+    padding-top: 30%;
+  }
+
+  #omosstart img{
+    width: 80vw;
+  }
+
+  .omos{
+    height: auto;
+    padding: 5%;
+    width: 90vw;
+    margin:0% 5%;
+
+  }
+  
+  #info img{
+    display: none;
+
+  }
+
+  .light #info{
+    text-align: left;
+    height: auto;
+    padding: 5%;
+    width: 90vw;
+    margin:0% 5%;
+  }
+
+  #holdet{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee{
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+/*webinarside------*/
+
+#webinarside{
+  padding-top: 20%;
+}
+
+
   /*footer--------*/
 
   #footer h1{
@@ -640,5 +688,4 @@ font-size: 45pt;
   #some img {
     width: 100%;
   }
-
 }
