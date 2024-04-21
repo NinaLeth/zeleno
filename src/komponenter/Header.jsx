@@ -29,7 +29,7 @@ function BurgerMenu() {
                 <br />
                 <NavLink to="/error" onClick={closeMenu}>Cases</NavLink>
                 <br />
-                <NavLink to="/" onClick={closeMenu}>Kontakt</NavLink>
+                <NavLink to="/" onClick={() => { closeMenu(); document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }); }}>Kontakt</NavLink>
                 <br />
                 <NavLink to="/omos" onClick={closeMenu}>Om os</NavLink>
                 <br />

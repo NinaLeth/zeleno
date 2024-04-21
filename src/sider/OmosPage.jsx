@@ -1,5 +1,5 @@
 import titel from "../assets/omostitel.svg"
-import info from "../assets/info.png"
+import info from "../assets/infografik.svg"
 import holdet from "../assets/holdet.svg"
 import family from "../assets/family.svg"
 import marie from "../assets/marie.svg"

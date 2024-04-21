@@ -2,9 +2,10 @@ import stortlogo from "../assets/Logo.svg"
 import globe from "../assets/globe_ikon.svg"
 import lup from "../assets/lup_ikon.svg"
 import mega from "../assets/megafon_ikon.svg"
-import scroller from "../assets/kvadrat_med_cirkel.svg"
+import scroller from "../assets/kvadrat_med_cirkel.json"
+import el from "../assets/elpæregrafik.svg"
 import animation from "../assets/fire_cirkler.json"
-import elanimation from "../assets/elpæregrafik 2.json"
+import forsideanimation from "../assets/Forsidelogo.json"
 import storanimation from "../assets/mange_firkanter.json"
 import Lottie from "lottie-react"
 import { Link } from "react-router-dom"
@@ -13,9 +14,9 @@ export default function HomePage() {
     return (
         <>
         <div className="dark">
-            <div className="forside">
-            <img id="stortlogo" src={stortlogo} alt="stortlogo" />   
-            <Lottie  id="elanimation" animationData={elanimation} loop={false} />
+            <div className="forside"> 
+            <Lottie id="forsideanimation" animationData={forsideanimation} loop={false} />
+            <img id="el" src={el} alt="Elpære billede med teksten lad os oplyse dig" />
             </div>
 
             <div className="fact">
@@ -32,9 +33,8 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-            <img className="scroller" src={scroller} alt="scroll og se figuren bevæge sig" />
         </div>
-
+        <Lottie className="scroller" animationData={scroller} loop={true} />
         <div className="light">
             <div className="fact">
                 <div className="overskrift">
@@ -93,12 +93,9 @@ export default function HomePage() {
                         <Link to="/error">SE CASES</Link>
                     </div>
                     </div>
-
-                    <Lottie id="mangefirkanter" animationData={storanimation} loop={true} />
-
                 </section>
-
             </div>
+            <Lottie id="mangefirkanter" animationData={storanimation} loop={true} />
         </div>
 
         </>
