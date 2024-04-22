@@ -9,6 +9,8 @@ import amalie from "../assets/amalie 2.svg"
 
 export default function OmosPage() {
 
+    
+
     return (
         <>
             <div className="dark">

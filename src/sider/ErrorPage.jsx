@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 
 export default function ErrorPage() {
 
+
     return (
         <section className="dark">
             <div id="webinarside">

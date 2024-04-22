@@ -12,6 +12,7 @@ function BurgerMenu() {
   const closeMenu = () => {
     setIsOpen(false);
   };
+  
 
   return (
     <div className="header">

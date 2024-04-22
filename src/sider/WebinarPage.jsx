@@ -81,6 +81,7 @@ const [webinar, setWebinar] = useState("");
         } else {
             setStatus("Du skal vælge mindst ét webinar.");
         }
+        
     }
 
     return (

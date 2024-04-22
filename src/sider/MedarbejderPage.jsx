@@ -46,6 +46,8 @@ export default function MedarbejderPage() {
         .catch((error) => {
             setStatus('Fejl ved gemning af formulardata', error);
         });
+
+        
     }
 
     useEffect(() => {
