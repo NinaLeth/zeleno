@@ -18,6 +18,7 @@ export default function Kunder({ kunde, handleButton }) {
         :
         <div>
             <button className="knap" type="button" data-knap="Udført" value={kunde.id} onClick={handleButton}>WEBINAR UDFØRT</button>
+        <br /><br />
         </div>
     }
     </div>

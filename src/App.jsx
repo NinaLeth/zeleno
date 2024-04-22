@@ -22,9 +22,9 @@ function App() {
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/omos" element={<OmosPage />} />
         <Route path="/webinar" element={<WebinarPage />} />
-        <Route path="/*" element={<ErrorPage />} /> 
         <Route path="/admin" element={<LoginPage />} />
         <Route path="/medarbejder" element={<MedarbejderPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </>

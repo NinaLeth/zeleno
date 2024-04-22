@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import animation from "../assets/404.json";
 import Lottie from "lottie-react";
+import { useEffect} from "react";
 
 export default function ErrorPage() {
+
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0)
+      
+      }, [])
 
 
     return (

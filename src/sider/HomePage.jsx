@@ -1,19 +1,22 @@
-import stortlogo from "../assets/Logo.svg"
 import globe from "../assets/globe_ikon.svg"
 import lup from "../assets/lup_ikon.svg"
 import mega from "../assets/megafon_ikon.svg"
 import scroller from "../assets/kvadrat_med_cirkel.json"
-import el from "../assets/elpæregrafik.svg"
+import el from "../assets/elpæregrafik 3.svg"
 import animation from "../assets/fire_cirkler.json"
 import forsideanimation from "../assets/Forsidelogo.json"
 import storanimation from "../assets/mange_firkanter.json"
 import Lottie from "lottie-react"
 import { Link } from "react-router-dom"
+import { useEffect} from "react";
 export default function HomePage() {
 
-    
+    useEffect(() => {
 
-    
+        window.scrollTo(0, 0)
+      
+      }, [])
+
 
     return (
         <>
@@ -71,7 +74,7 @@ export default function HomePage() {
                             </p>
                         </div>
                         <div className="knap">
-                        <Link to="/error">SE CASES</Link>
+                        <Link to="/" onClick={() => { document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }); }}>KONTAKT OS</Link>
                     </div>
                     </div>
                     <div className="kort">
@@ -82,7 +85,7 @@ export default function HomePage() {
                             <br /></p>
                         </div>
                         <div className="knap">
-                        <Link to="/error">SE CASES</Link>
+                        <Link to="/" onClick={() => { document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }); }}>KONTAKT OS</Link>
                     </div>
                     </div>
                     <div className="kort">
@@ -94,7 +97,7 @@ export default function HomePage() {
                             </p>
                         </div>
                         <div className="knap">
-                        <Link to="/error">SE CASES</Link>
+                        <Link to="/" onClick={() => { document.getElementById('footer').scrollIntoView({ behavior: 'smooth' }); }}>KONTAKT OS</Link>
                     </div>
                     </div>
                 </section>

@@ -6,8 +6,15 @@ import marie from "../assets/marie.svg"
 import nina from "../assets/nina.svg"
 import kasper from "../assets/kasper.svg"
 import amalie from "../assets/amalie 2.svg"
+import { useEffect} from "react";
 
 export default function OmosPage() {
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0)
+      
+      }, [])
 
     
 

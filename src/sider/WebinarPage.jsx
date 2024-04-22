@@ -3,6 +3,12 @@ import Webinar from "../komponenter/Webinar";
 
 export default function WebinarPage() {
 
+    useEffect(() => {
+
+        window.scrollTo(0, 0)
+      
+      }, [])
+
 
 const [posts, setPosts] = useState([]);
 const [isPosts, setIsPosts] = useState(true);

@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { auth } from '../../firebase-config';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
+
+    useEffect(() => {
+
+        window.scrollTo(0, 0)
+      
+      }, [])
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

@@ -8,12 +8,10 @@
 
 .dark{
   background-color: #232323;
-  /*height:100vh;*/
 }
 
 .light{
   background-color: #2e2e2e;
-  /*height:100vh;*/
 }
 
 
@@ -28,6 +26,7 @@
   margin: 2% 0%;
   background-color: transparent;
   width: 60vw;
+  flex-wrap: wrap;
 }
 
 input[type="text"] {
@@ -39,8 +38,6 @@ input[type="number"] {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #F5F5F5;
 }
-
-
 
 /*FONTE---------------*/
 
@@ -81,7 +78,7 @@ h3{
   transform: scale(0.6);
   position: absolute;
   right: 0;
-  margin-right: 10%;
+  margin-right: 5%;
   margin-top: -28vh;
   z-index: 1;
 }
@@ -103,33 +100,12 @@ h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;/*så den ikke går ud af skærmen*/
+  max-width: 100%;
   width: 100vw;
   margin-top: 2%;
 
   z-index:5;
 }
-
-/*
-nav{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-right: 10%;
-}
-
-
-.header nav {
-  display: flex;
-  margin-top:3.5vh;
-  width: 50vw;
-  background-color: orange;
-} 
-
-.header nav a{
-  padding: 0 20px;
-  width:130px;
-}*/
 
 #logo{
   width: 80px;
@@ -305,10 +281,6 @@ a{
   flex-direction: column;
 }
 
-/*.light .fact .overskrift h1{
-font-size: 40pt;
-}*/
-
 .light .fact p{
   text-align: center;
   margin: 0px;
@@ -326,22 +298,14 @@ font-size: 40pt;
   justify-content: center;
 }
 
-/*.services h1{
-font-size: 7vh;
-margin-top:7vh;
-}*/
-
 #trekort{
   margin-top: 7vh;
   display: flex;
-  /*flex-direction: row;*/
-  /*width:60vw;*/
   justify-content: center;
   gap: 1vw;
 }
 
 .kort{
-  /*justify-content: space-between;*/
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -377,7 +341,7 @@ margin-top:4vh;
 /*WEBINAR__________________*/
 
 #webinarside{
-  padding-top: 8%; /*burde nok være 10 men lad os lige finde den helt perfekte margen*/
+  padding-top: 8%;
   width: 60vw;
   display: flex;
   justify-content: center;
@@ -438,38 +402,6 @@ font-weight: 200;
 font-size: larger;
 margin-top:-80px;
 }
-
-/*
-.omos h1{
-  font-size: 45pt;
-  margin-top: 3vh;
-}
-.omos h3{
-  color: #F5F5F5;
-  font-weight: 300;
-  font-size: xxx-large;
-  margin-bottom: 70px;
-}
-
-.omos .tekstbox{
-  margin-top: 3%;
-  width: 100%;
-  text-align: left;
-  border-color: #52E17A;
-  border-style: solid;
-  margin-bottom:25%;
-}*/
-
-/*
-
-.omos p{
-  font-size: 15pt;
-}
-
-#info h1{
-font-size: 45pt;
-}*/
-
 
 .light #info{
   width:60vw;
@@ -711,7 +643,7 @@ font-size: 45pt;
     margin: 0%;
     width: 10%;
     display: flex;
-    flex-direction: column; /* Ændret til column for at placere billederne under hinanden */
+    flex-direction: column;
     flex-wrap: wrap;
   }
   

@@ -7,6 +7,12 @@ import Kunder from "../komponenter/Kunder";
 
 export default function MedarbejderPage() {
 
+    useEffect(() => {
+
+        window.scrollTo(0, 0)
+      
+      }, [])
+
 
     const [dato, setDato] = useState('');
     const [tid, setTidspunkt] = useState('');
