@@ -4,6 +4,7 @@ import instagram from "../assets/instagram_ikon.svg"
 import facebook from "../assets/facebook_ikon.svg"
 import linkedin from "../assets/linkedin_ikon.svg"
 
+//Nina & Kasper
 export default function Footer() {
 
     return (

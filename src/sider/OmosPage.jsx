@@ -1,3 +1,4 @@
+//Kasper, Nina & Amalie
 import titel from "../assets/omostitel.svg"
 import info from "../assets/infografik.svg"
 import holdet from "../assets/holdet.svg"

@@ -1,3 +1,5 @@
+//Nina
+
 export default function Kunder({ kunde, handleButton }) {
     return (
         <div>

@@ -1,3 +1,4 @@
+//Nina, Kasper & Marie 
 import globe from "../assets/globe_ikon.svg"
 import lup from "../assets/lup_ikon.svg"
 import mega from "../assets/megafon_ikon.svg"
